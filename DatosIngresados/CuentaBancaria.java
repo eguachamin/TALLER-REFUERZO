@@ -40,8 +40,10 @@ public class CuentaBancaria {
         System.out.println("Total de la cuenta: " + total);
     }
     public void retirar() {
+        System.out.println("Numero de Cuenta" + numeroCuenta);
         System.out.println("El monto ingresado a retirar es" + monto);
-        monto=getSaldo()-monto;
-        System.out.println("Total de la cuenta: " + monto);
+        double total;
+        total=getSaldo()-monto;
+        System.out.println("Total de la cuenta: " + total);
     }
 }
