@@ -5,6 +5,9 @@ public class CuentaBancaria {
     private double saldo;
     public double monto;
 
+    public CuentaBancaria(){
+
+    }
     public CuentaBancaria(int numeroCuenta){
     this.numeroCuenta=numeroCuenta;
     }
@@ -16,10 +19,25 @@ public class CuentaBancaria {
     public double getSaldo() {
         return saldo;
     }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getMonto() {
+        return monto;
+    }
+
+    public void setMonto(double monto) {
+        this.monto = monto;
+    }
+
     public void depositar() {
+        System.out.println("Numero de Cuenta" + numeroCuenta);
         System.out.println("El monto ingresado a depositar es" + monto);
-        monto=getSaldo()+monto;
-        System.out.println("Total de la cuenta: " + monto);
+        double total;
+        total=getSaldo()+monto;
+        System.out.println("Total de la cuenta: " + total);
     }
     public void retirar() {
         System.out.println("El monto ingresado a retirar es" + monto);
